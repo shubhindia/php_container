@@ -2,7 +2,7 @@
 
 #Start the docker service
 sudo systemctl status docker 
-sudo service docker start
+sudo service docker restart
 
 #Get the docker configuration file from git
 curl https://raw.githubusercontent.com/shubhindia/php_container/master/docker-compose.yml > docker-compose.yml
