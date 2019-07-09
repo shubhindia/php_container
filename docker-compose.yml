@@ -1,0 +1,15 @@
+version: '2'
+services:
+    web:
+        image: nginx:alpine
+        ports:
+            - "8000:80"
+        volumes:
+            - ./webroot:/var/www/html
+            - ./site.conf:/etc/nginx/conf.d/site.conf
+        links:
+            - php7
+    php7:
+        image: php:7-fpm-alpine
+        volumes:
+            - ./webroot:/var/www/html
