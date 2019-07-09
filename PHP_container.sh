@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #Start the docker service
+sudo systemctl status docker 
 sudo service docker start
 
 #Get the docker configuration file from git
