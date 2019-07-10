@@ -12,7 +12,7 @@ pipeline{
         }
         stage('Check If everything in place')
         {    
-        steps{ sh 'sudo su '}
+        steps{ sh 'whoami'}
         }
         stage('Installation Stage With Docker ')
         {
