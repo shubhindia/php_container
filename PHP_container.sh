@@ -1,6 +1,8 @@
 #!/bin/bash
 
 #Start the docker service
+exit
+sudo -i
 systemctl status docker 
 #service docker restart
 
