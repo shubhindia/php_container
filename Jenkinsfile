@@ -1,6 +1,10 @@
 pipeline{
     agent any
     stages{
+        stage ('switch user to root'){
+            steps{
+                sh 'exit'
+            }
         stage('Fetch Configuration file from git')
         {
             steps{ sh 'wget https://raw.githubusercontent.com/shubhindia/php_container/master/PHP_container.sh'}
