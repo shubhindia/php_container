@@ -3,6 +3,7 @@
 #Start the docker service
 exit
 sudo -i
+whoami
 systemctl status docker 
 #service docker restart
 
